@@ -21,9 +21,7 @@ export function numberInWords(numTo1000) {
     } else {
         result.push(tens[numTo100 / 10 | 0] + '-' + ones[numTo100 % 10]);
     }
-
     return result.join(' ');
-
 
 }
 
