@@ -1,9 +1,11 @@
-export function numberInWords(numTo1000) {
+const ones = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+const tens = ["", "", "twenty", "thirty", "forty",
+    "fifty", "sixty", "seventy", "eighty", "ninety"];
+const hundred = "hundred";
 
-    const ones = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
-    const tens = ["", "", "twenty", "thirty", "forty",
-        "fifty", "sixty", "seventy", "eighty", "ninety"];
-    const hundred = "hundred";
+
+
+export function numberInWords(numTo1000) {
 
     const result = [];
 
@@ -25,8 +27,8 @@ export function numberInWords(numTo1000) {
 
 }
 
-export function wordsInNumbers() {
+import wordsToNumbers from 'words-to-numbers';
 
 
+ wordsToNumbers('');
 
-}
